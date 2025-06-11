@@ -1,6 +1,6 @@
 # CustomerAndMatterManagementAPI
 This project is a .NET 8 Web API for managing lawyers, customers, and legal matters. It uses Entity Framework Core with PostgreSQL, supports JWT authentication, and is CORS-enabled for frontend integration.
-Lint to front-end repo: 
+Link to front-end repo: https://github.com/andrew-turner-dev/lawyer-portal
 
 ## Prerequisites
 
