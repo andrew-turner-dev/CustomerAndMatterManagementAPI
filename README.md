@@ -27,7 +27,24 @@ Migrations can be applied by running
 Update-Database
 ```
 
-**NOTE:** Seed data is defined CustomerAndMatterContext. The first time `Update-Database` is ran it will seed the data for you. 
+Commands can also be ran directly from the command line. 
+First update your machine's version of Entity Framework Core .Net Command-line Tools via the follwoing command within the solution directory
+```
+dotnet tool update --global dotnet-ef
+```
+Make sure the version is compatiable with the run time version of Entity Framework in the project, currently 9.05.
+
+To add a migration run the following command
+```
+dotnet ef migrations add MyMigration --project CustomerAndMatterData --startup-project CustomerAndMatterManagementAPI
+```
+
+To update the database run the following command
+```
+dotnet ef database update --project CustomerAndMatterData --startup-project CustomerAndMatterManagementAPI
+```
+
+**NOTE:** Seed data is defined CustomerAndMatterContext. The first time the database is updated it will seed the data for you. 
 
 ## API Authentication
 Authenticate to hit api with the following steps: 
