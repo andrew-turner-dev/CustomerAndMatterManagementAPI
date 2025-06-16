@@ -1,6 +1,6 @@
 # CustomerAndMatterManagementAPI
 This project is a .NET 8 Web API for managing lawyers, customers, and legal matters. It uses Entity Framework Core with PostgreSQL, supports JWT authentication, and is CORS-enabled for frontend integration.
-Lint to front-end repo: 
+Link to front-end repo: https://github.com/andrew-turner-dev/lawyer-portal
 
 ## Prerequisites
 
@@ -64,4 +64,4 @@ The following is a list of things to be completed.
 3. Password encryptions
 4. Admin Roles
 5. Firm management
-6. Unit testing
+6. Unit testing. **Note:** Jest and Mocha were mentioned specifically for backend testing. However, in the case .net MSTest, Nunit or Xunit should be used. Jest can be adapted for .net however, other frameworks should be considered. 
